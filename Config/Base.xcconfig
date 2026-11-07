@@ -1,0 +1,12 @@
+// Settings shared by the app and the complication extension.
+// Per-developer values (signing team, bundle ID prefix) go in Config/Local.xcconfig, which is
+// gitignored: copy Config/Local.xcconfig.example and fill it in.
+
+BUNDLE_ID_PREFIX = local.bedwatch
+DEVELOPMENT_TEAM =
+
+// Bumped before every build by Tools/bump-build-number.sh (gitignored, created on first build).
+CURRENT_PROJECT_VERSION = 1
+#include? "BuildNumber.xcconfig"
+
+#include? "Local.xcconfig"

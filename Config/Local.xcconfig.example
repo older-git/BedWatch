@@ -1,0 +1,8 @@
+// Copy to Config/Local.xcconfig (gitignored) and fill in.
+
+// Your Apple developer team ID: Xcode → Settings → Accounts, or pick the team once in the
+// target's Signing & Capabilities and copy DEVELOPMENT_TEAM from the project file.
+DEVELOPMENT_TEAM = ABCDE12345
+
+// Bundle IDs must be unique across all Apple developers; use something of your own.
+BUNDLE_ID_PREFIX = com.example.yourname

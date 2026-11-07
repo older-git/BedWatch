@@ -1,0 +1,18 @@
+# Build output
+.build/
+.build-xcode/
+.swiftpm/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+.DS_Store
+
+# Per-developer / generated config
+Config/Local.xcconfig
+Config/BuildNumber.xcconfig
+
+# Local-only: bedctl logs (contain a specific bed's addresses), Claude Code settings,
+# and the original private project brief (published, cleaned, as docs/DESIGN-NOTES.md)
+logs/
+.claude/
+sleep-number-watch-remote.md
