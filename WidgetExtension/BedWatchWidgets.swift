@@ -5,7 +5,6 @@ import WidgetKit
 struct BedWatchWidgets: WidgetBundle {
     var body: some Widget {
         BedLauncherWidget()
-        WeatherWidget()
     }
 }
 

@@ -25,9 +25,5 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.widgetkit-extension</string>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Your location is used to show local weather (rounded to about 1 km and sent to open-meteo.com).</string>
-	<key>NSWidgetWantsLocation</key>
-	<true/>
 </dict>
 </plist>

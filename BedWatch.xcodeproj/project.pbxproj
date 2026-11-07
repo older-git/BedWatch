@@ -11,15 +11,10 @@
 		2312E33815E499D3ED01CA17 /* BedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D88EF21951E761F6AF0D10 /* BedController.swift */; };
 		26EE6F5249C8490FFF70AEFD /* BedWatchWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 08AACA7BBBD7BB5AD9FE31D8 /* BedWatchWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		36B163FC56D9B33C858B0B88 /* BedWatchWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3FADCF0A6418F73731774 /* BedWatchWidgets.swift */; };
-		49D540A4AC000C754287059D /* WeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BAFD909179FB3895AC0F84 /* WeatherWidget.swift */; };
-		7C2AF4078CCD6ADB2E78F77A /* WeatherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B86711BA7AD0A6FA7C06513 /* WeatherPage.swift */; };
 		9E470B27237ADAD2ED85EC53 /* MCRProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = D98CFD58E77ADA4472074A7B /* MCRProtocol */; };
-		9EB9F721D651C9A60104BC31 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ECDBCA6798915D848C1D /* Weather.swift */; };
-		AA6C1A39D16CF9923445D16E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ECDBCA6798915D848C1D /* Weather.swift */; };
 		B0A7E67928ADDA9E2D00DE6D /* MCRBluetooth in Frameworks */ = {isa = PBXBuildFile; productRef = A3FEDD45624C19E1FD951CCA /* MCRBluetooth */; };
 		CC98263049200058B4B0DD56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709741E3FB7A1EF52A3460EC /* ContentView.swift */; };
 		FD3D7ACAC58F5F2EE4DA7D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F08DF864BF67339A8F59EF /* Assets.xcassets */; };
-		FDFA228ADD322B2C6A2B5076 /* LocationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287B55DB2C4D38DC2A53B17 /* LocationPermission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +42,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0469ECDBCA6798915D848C1D /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		08AACA7BBBD7BB5AD9FE31D8 /* BedWatchWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BedWatchWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF5FA73AF8B71D940885DA4 /* MCRProtocol */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MCRProtocol; path = MCRProtocol; sourceTree = SOURCE_ROOT; };
 		37A3FADCF0A6418F73731774 /* BedWatchWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedWatchWidgets.swift; sourceTree = "<group>"; };
@@ -58,9 +52,6 @@
 		6D7D1970B20728D8686374AD /* BedWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedWatchApp.swift; sourceTree = "<group>"; };
 		709741E3FB7A1EF52A3460EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		87A3F94FF4018343859D2F7A /* BedWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BedWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B86711BA7AD0A6FA7C06513 /* WeatherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPage.swift; sourceTree = "<group>"; };
-		B287B55DB2C4D38DC2A53B17 /* LocationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermission.swift; sourceTree = "<group>"; };
-		D5BAFD909179FB3895AC0F84 /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
 		E5F08DF864BF67339A8F59EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,14 +93,6 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
-		61546145D7389A4C690A667F /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				0469ECDBCA6798915D848C1D /* Weather.swift */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
 		9135F744F6FB308BBABD4B37 /* WatchApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +101,6 @@
 				6D7D1970B20728D8686374AD /* BedWatchApp.swift */,
 				709741E3FB7A1EF52A3460EC /* ContentView.swift */,
 				43ACA54B8725B171B76DA021 /* Info.plist */,
-				B287B55DB2C4D38DC2A53B17 /* LocationPermission.swift */,
-				8B86711BA7AD0A6FA7C06513 /* WeatherPage.swift */,
 			);
 			path = WatchApp;
 			sourceTree = "<group>";
@@ -129,7 +110,6 @@
 			children = (
 				55AD42DD1463B5630E1A168E /* Config */,
 				4AB627C3A9D54984142B7CCC /* Packages */,
-				61546145D7389A4C690A667F /* Shared */,
 				9135F744F6FB308BBABD4B37 /* WatchApp */,
 				CA455744A0FB623962349342 /* WidgetExtension */,
 				3C4B1A56C4B738E363A2F18A /* Products */,
@@ -141,7 +121,6 @@
 			children = (
 				37A3FADCF0A6418F73731774 /* BedWatchWidgets.swift */,
 				39135D6F3938B8A7C6F5EDBC /* Info.plist */,
-				D5BAFD909179FB3895AC0F84 /* WeatherWidget.swift */,
 			);
 			path = WidgetExtension;
 			sourceTree = "<group>";
@@ -250,9 +229,6 @@
 				2312E33815E499D3ED01CA17 /* BedController.swift in Sources */,
 				127EED90B2CD014F10570848 /* BedWatchApp.swift in Sources */,
 				CC98263049200058B4B0DD56 /* ContentView.swift in Sources */,
-				FDFA228ADD322B2C6A2B5076 /* LocationPermission.swift in Sources */,
-				9EB9F721D651C9A60104BC31 /* Weather.swift in Sources */,
-				7C2AF4078CCD6ADB2E78F77A /* WeatherPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +237,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B163FC56D9B33C858B0B88 /* BedWatchWidgets.swift in Sources */,
-				AA6C1A39D16CF9923445D16E /* Weather.swift in Sources */,
-				49D540A4AC000C754287059D /* WeatherWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

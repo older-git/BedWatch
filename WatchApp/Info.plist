@@ -22,8 +22,6 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>BedWatch connects directly to your Sleep Number pump over Bluetooth to adjust the bed.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Your location is used by the Temp + Humidity complication to show local weather (rounded to about 1 km and sent to open-meteo.com).</string>
 	<key>WKApplication</key>
 	<true/>
 	<key>WKWatchOnly</key>

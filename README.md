@@ -15,8 +15,8 @@ days. Built for half-asleep use: big buttons, haptics, one screen.
 
 | Part | What it is |
 |---|---|
-| `WatchApp/` | The watchOS app: head/foot ±10 %, Flat, Favorite, Stop, firmness ±5 per side, plus a small Weather page |
-| `WidgetExtension/` | Complications: **Bed Remote** (opens the app) and **Temp + Humidity** in a single slot |
+| `WatchApp/` | The watchOS app: head/foot ±10 %, Flat, Favorite, Stop, firmness ±5 per side |
+| `WidgetExtension/` | **Bed Remote** complication: one tap from the watch face to the remote |
 | `MCRProtocol/` | Swift package: the MCR wire protocol (`MCRProtocol`), a CoreBluetooth transport (`MCRBluetooth`), and `bedctl`, a Mac command-line tool for testing against a real bed |
 | `docs/DESIGN-NOTES.md` | Protocol reference and everything learned validating it on hardware |
 
@@ -44,7 +44,7 @@ days and need reinstalling.
 2. Open `BedWatch.xcodeproj`, choose your Watch as the run destination, press Run.
    (The project is generated from `project.yml` with [XcodeGen](https://github.com/yonaskolb/XcodeGen);
    run `xcodegen generate` after changing it.)
-3. On first launch, allow Bluetooth (for the bed) and Location (for the weather complication).
+3. On first launch, allow Bluetooth.
 
 Force-quit the Sleep Number app on your phone(s) first: **the pump accepts one Bluetooth
 client at a time.**
@@ -82,7 +82,8 @@ including frames captured from a real bed.
   kristofferR (MIT), a Home Assistant integration for many adjustable beds. Its Sleep Number MCR
   implementation and frozen test vectors made this possible; parts of `MCRProtocol` are a Swift
   port of it.
-- Weather data by [Open-Meteo.com](https://open-meteo.com/) (CC BY 4.0).
+- Looking for the temperature + humidity complication that used to live here? It's now its own
+  app: [CompactWeather](https://github.com/older-git/CompactWeather).
 
 ## License
 

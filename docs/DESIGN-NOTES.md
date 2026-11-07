@@ -366,7 +366,7 @@ bit2 foot, bit3 warming, bit4 light; `payload[0]` configuration: 1 or 2 → two 
 - Uses `MCRProtocol` + `MCRBluetooth` from the local package unchanged.
 - Builds for watchOS device and simulator (unsigned). Bluetooth doesn't work in the simulator,
   so testing on the bed needs a signed install on the Ultra.
-- Complications (`WidgetExtension/`, target `BedWatchWidgets`): **Bed Remote** launcher, and
-  **Temp + Humidity** in one slot from Open-Meteo (no key), current location rounded to
-  ~1 km, refreshed every 30 min, last fix cached. The app requests location on first launch
-  (widgets can't prompt). Switch to WeatherKit once the paid developer account exists.
+- Complication (`WidgetExtension/`, target `BedWatchWidgets`): **Bed Remote** launcher.
+  The Temp + Humidity complication and Weather page briefly lived here and moved to their own
+  app, [CompactWeather](https://github.com/older-git/CompactWeather), so tapping the
+  complication opens weather directly (a complication can only open its own app).

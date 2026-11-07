@@ -30,7 +30,7 @@ targets:
   BedWatch:
     type: application
     platform: watchOS
-    sources: [WatchApp, Shared]
+    sources: [WatchApp]
     dependencies:
       - package: MCRProtocol
         product: MCRProtocol
@@ -46,7 +46,6 @@ targets:
         WKApplication: true
         WKWatchOnly: true
         NSBluetoothAlwaysUsageDescription: BedWatch connects directly to your Sleep Number pump over Bluetooth to adjust the bed.
-        NSLocationWhenInUseUsageDescription: Your location is used by the Temp + Humidity complication to show local weather (rounded to about 1 km and sent to open-meteo.com).
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: $(BUNDLE_ID_PREFIX).BedWatch
@@ -59,7 +58,7 @@ targets:
   BedWatchWidgets:
     type: app-extension
     platform: watchOS
-    sources: [WidgetExtension, Shared]
+    sources: [WidgetExtension]
     info:
       path: WidgetExtension/Info.plist
       properties:
@@ -68,8 +67,6 @@ targets:
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
-        NSWidgetWantsLocation: true
-        NSLocationWhenInUseUsageDescription: Your location is used to show local weather (rounded to about 1 km and sent to open-meteo.com).
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: $(BUNDLE_ID_PREFIX).BedWatch.widgets

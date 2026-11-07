@@ -112,9 +112,9 @@ final class BedController {
         startWorker()
     }
 
-    /// Silently stop any work and drop the link. Used when the app goes to the background
-    /// (watchOS suspends it, which would leave the pump with a stale client) and when the
-    /// weather page takes over. No haptic: here it would read as a notification.
+    /// Silently stop any work and drop the link. Used when the app goes to the background:
+    /// watchOS suspends it, which would leave the pump with a stale client. No haptic: here it
+    /// would read as a notification.
     func release() {
         cancelWork()
         disconnect()
