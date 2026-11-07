@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05953F818A3EF1735FB3F715 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F3607302979C36B02758FD /* AppIntents.framework */; };
 		127EED90B2CD014F10570848 /* BedWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D1970B20728D8686374AD /* BedWatchApp.swift */; };
 		2312E33815E499D3ED01CA17 /* BedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D88EF21951E761F6AF0D10 /* BedController.swift */; };
 		26EE6F5249C8490FFF70AEFD /* BedWatchWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 08AACA7BBBD7BB5AD9FE31D8 /* BedWatchWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		36B163FC56D9B33C858B0B88 /* BedWatchWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3FADCF0A6418F73731774 /* BedWatchWidgets.swift */; };
+		603B535FD9F46983E1819E89 /* BedIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3552BB09A65B45D6DEB6727B /* BedIntents.swift */; };
+		82DF238689D785CF78B35017 /* RecallFavoriteIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EA824ADDE66FD8125F815 /* RecallFavoriteIntent.swift */; };
 		9E470B27237ADAD2ED85EC53 /* MCRProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = D98CFD58E77ADA4472074A7B /* MCRProtocol */; };
+		A570BE85C37B74B64D3C9C09 /* RecallFavoriteIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EA824ADDE66FD8125F815 /* RecallFavoriteIntent.swift */; };
+		AFDF6C98A1B76B5E95D7E1F2 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F3607302979C36B02758FD /* AppIntents.framework */; };
 		B0A7E67928ADDA9E2D00DE6D /* MCRBluetooth in Frameworks */ = {isa = PBXBuildFile; productRef = A3FEDD45624C19E1FD951CCA /* MCRBluetooth */; };
 		CC98263049200058B4B0DD56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709741E3FB7A1EF52A3460EC /* ContentView.swift */; };
 		FD3D7ACAC58F5F2EE4DA7D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F08DF864BF67339A8F59EF /* Assets.xcassets */; };
@@ -44,6 +49,7 @@
 /* Begin PBXFileReference section */
 		08AACA7BBBD7BB5AD9FE31D8 /* BedWatchWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BedWatchWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF5FA73AF8B71D940885DA4 /* MCRProtocol */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MCRProtocol; path = MCRProtocol; sourceTree = SOURCE_ROOT; };
+		3552BB09A65B45D6DEB6727B /* BedIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedIntents.swift; sourceTree = "<group>"; };
 		37A3FADCF0A6418F73731774 /* BedWatchWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedWatchWidgets.swift; sourceTree = "<group>"; };
 		39135D6F3938B8A7C6F5EDBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		43ACA54B8725B171B76DA021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -51,17 +57,28 @@
 		6385A4A7F6FFB7DA992CD380 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		6D7D1970B20728D8686374AD /* BedWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedWatchApp.swift; sourceTree = "<group>"; };
 		709741E3FB7A1EF52A3460EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		83F3607302979C36B02758FD /* AppIntents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppIntents.framework; path = System/Library/Frameworks/AppIntents.framework; sourceTree = SDKROOT; };
 		87A3F94FF4018343859D2F7A /* BedWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BedWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68EA824ADDE66FD8125F815 /* RecallFavoriteIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecallFavoriteIntent.swift; sourceTree = "<group>"; };
 		E5F08DF864BF67339A8F59EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		21DD64A4CA4D1509164D000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDF6C98A1B76B5E95D7E1F2 /* AppIntents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D43F3B1E9AB7BA5C554278C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9E470B27237ADAD2ED85EC53 /* MCRProtocol in Frameworks */,
 				B0A7E67928ADDA9E2D00DE6D /* MCRBluetooth in Frameworks */,
+				05953F818A3EF1735FB3F715 /* AppIntents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,11 +110,20 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		61546145D7389A4C690A667F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D68EA824ADDE66FD8125F815 /* RecallFavoriteIntent.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		9135F744F6FB308BBABD4B37 /* WatchApp */ = {
 			isa = PBXGroup;
 			children = (
 				E5F08DF864BF67339A8F59EF /* Assets.xcassets */,
 				61D88EF21951E761F6AF0D10 /* BedController.swift */,
+				3552BB09A65B45D6DEB6727B /* BedIntents.swift */,
 				6D7D1970B20728D8686374AD /* BedWatchApp.swift */,
 				709741E3FB7A1EF52A3460EC /* ContentView.swift */,
 				43ACA54B8725B171B76DA021 /* Info.plist */,
@@ -110,10 +136,20 @@
 			children = (
 				55AD42DD1463B5630E1A168E /* Config */,
 				4AB627C3A9D54984142B7CCC /* Packages */,
+				61546145D7389A4C690A667F /* Shared */,
 				9135F744F6FB308BBABD4B37 /* WatchApp */,
 				CA455744A0FB623962349342 /* WidgetExtension */,
+				C4D91C4542B7E60C2B9BCB4F /* Frameworks */,
 				3C4B1A56C4B738E363A2F18A /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		C4D91C4542B7E60C2B9BCB4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83F3607302979C36B02758FD /* AppIntents.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CA455744A0FB623962349342 /* WidgetExtension */ = {
@@ -133,6 +169,7 @@
 			buildConfigurationList = BF42E5AF858FE7DD6E6DA750 /* Build configuration list for PBXNativeTarget "BedWatchWidgets" */;
 			buildPhases = (
 				C86BFB2A066A94F4D3DBAAE5 /* Sources */,
+				21DD64A4CA4D1509164D000A /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2312E33815E499D3ED01CA17 /* BedController.swift in Sources */,
+				603B535FD9F46983E1819E89 /* BedIntents.swift in Sources */,
 				127EED90B2CD014F10570848 /* BedWatchApp.swift in Sources */,
 				CC98263049200058B4B0DD56 /* ContentView.swift in Sources */,
+				A570BE85C37B74B64D3C9C09 /* RecallFavoriteIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B163FC56D9B33C858B0B88 /* BedWatchWidgets.swift in Sources */,
+				82DF238689D785CF78B35017 /* RecallFavoriteIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

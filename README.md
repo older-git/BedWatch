@@ -16,7 +16,7 @@ days. Built for half-asleep use: big buttons, haptics, one screen.
 | Part | What it is |
 |---|---|
 | `WatchApp/` | The watchOS app: head/foot ±10 %, Flat, Favorite, Stop, firmness ±5 per side |
-| `WidgetExtension/` | **Bed Remote** complication: one tap from the watch face to the remote |
+| `WidgetExtension/` | **Bed Remote** complication (one tap from the watch face to the remote) and the **Bed Favorite** control (watchOS 26+): assign it to the Ultra's **Action button** to send the bed to Favorite with one press, in the dark |
 | `MCRProtocol/` | Swift package: the MCR wire protocol (`MCRProtocol`), a CoreBluetooth transport (`MCRBluetooth`), and `bedctl`, a Mac command-line tool for testing against a real bed |
 | `docs/DESIGN-NOTES.md` | Protocol reference and everything learned validating it on hardware |
 
@@ -45,6 +45,8 @@ days and need reinstalling.
    (The project is generated from `project.yml` with [XcodeGen](https://github.com/yonaskolb/XcodeGen);
    run `xcodegen generate` after changing it.)
 3. On first launch, allow Bluetooth.
+4. Optional, on an Ultra: Settings → Action Button → **Bed Favorite**. (Siri works too:
+   "BedWatch favorite".)
 
 Force-quit the Sleep Number app on your phone(s) first: **the pump accepts one Bluetooth
 client at a time.**

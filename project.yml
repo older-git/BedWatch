@@ -30,13 +30,14 @@ targets:
   BedWatch:
     type: application
     platform: watchOS
-    sources: [WatchApp]
+    sources: [WatchApp, Shared]
     dependencies:
       - package: MCRProtocol
         product: MCRProtocol
       - package: MCRProtocol
         product: MCRBluetooth
       - target: BedWatchWidgets
+      - sdk: AppIntents.framework   # needed for the build to extract App Intents metadata
     info:
       path: WatchApp/Info.plist
       properties:
@@ -58,7 +59,9 @@ targets:
   BedWatchWidgets:
     type: app-extension
     platform: watchOS
-    sources: [WidgetExtension]
+    sources: [WidgetExtension, Shared]
+    dependencies:
+      - sdk: AppIntents.framework   # the Bed Favorite control's intent needs extracted metadata
     info:
       path: WidgetExtension/Info.plist
       properties:

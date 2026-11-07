@@ -46,7 +46,10 @@ final class BedController {
     private var worker: Task<Void, Never>?
     private var idleDisconnect: Task<Void, Never>?
 
-    init() {
+    /// One controller for the app and its App Intents (the Action button / Shortcuts / Siri).
+    static let shared = BedController()
+
+    private init() {
         link = MCRBluetoothLink(log: { print("[bed] \($0)") })
         firmnessSide = MCRSide(rawValue: UInt8(UserDefaults.standard.integer(forKey: Keys.firmnessSide))) ?? .left
         link.onDisconnect = { [weak self] why in

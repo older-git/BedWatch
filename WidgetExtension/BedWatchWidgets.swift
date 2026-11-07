@@ -5,6 +5,26 @@ import WidgetKit
 struct BedWatchWidgets: WidgetBundle {
     var body: some Widget {
         BedLauncherWidget()
+        if #available(watchOS 26.0, *) {
+            FavoriteControl()
+        }
+    }
+}
+
+// MARK: - Bed Favorite control
+
+/// A one-tap control (watchOS 26+) that can be assigned to the Ultra's Action button or added
+/// to Control Center. Opens BedWatch, which sends the bed to Favorite.
+@available(watchOS 26.0, *)
+struct FavoriteControl: ControlWidget {
+    var body: some ControlWidgetConfiguration {
+        StaticControlConfiguration(kind: "BedFavorite") {
+            ControlWidgetButton(action: RecallFavoriteIntent()) {
+                Label("Bed Favorite", systemImage: "star.fill")
+            }
+        }
+        .displayName("Bed Favorite")
+        .description("Sends the bed to its Favorite position.")
     }
 }
 

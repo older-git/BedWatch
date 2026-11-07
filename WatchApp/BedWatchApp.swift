@@ -2,8 +2,12 @@ import SwiftUI
 
 @main
 struct BedWatchApp: App {
-    @State private var bed = BedController()
+    private let bed = BedController.shared
     @Environment(\.scenePhase) private var scenePhase
+
+    init() {
+        RecallFavoriteIntent.handler = { BedController.shared.preset(.favorite) }
+    }
 
     var body: some Scene {
         WindowGroup {
