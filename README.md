@@ -86,5 +86,6 @@ including frames captured from a real bed.
 
 ## License
 
-MIT — see [LICENSE](LICENSE), which also carries ha_smartbed's license for the ported parts.
-Provided as is, without warranty of any kind.
+MIT — see [LICENSE](LICENSE). The ported ha_smartbed parts are covered by its MIT license,
+reproduced in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Provided as is, without
+warranty of any kind.
